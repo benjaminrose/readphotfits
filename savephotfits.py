@@ -1,4 +1,4 @@
-"""savephotdict.py - covert SNANA fits to a human readable format.
+"""savephotfits.py - covert SNANA fits to a human readable format.
 
 An example of how to use readphotfits.py.
 
