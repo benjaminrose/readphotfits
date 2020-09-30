@@ -2,7 +2,7 @@
 
 An example of how to use readphotfits.py.
 
-Authors: Ben Rose,Dillon Brout
+Authors: Ben Rose, Dillon Brout
 
 Changelog:
  - 2020-09-29: Initial file creation.
@@ -23,10 +23,10 @@ FOLDER2 = SCRATCH_SIMDIR + '/Deep_Spec_BR_Nowiggle'
 result1 = readphotfits.getphotdict(FOLDER1, 5)
 result2 = readphotfits.getphotdict(FOLDER2, 5)
 
-breakpoint()
+#breakpoint()    # uncomment to use pdb/debug as an interactive env
 
-#with open('yeswiggle.yaml', 'w') as f:
-#    yaml.dump(result1, f)
-#
-#with open('nowiggle.yaml', 'w') as f:
-#    yaml.dump(result2, f)
+with open('yeswiggle.txt', 'w') as f:
+    print(str(result1), file=f)
+with open('nowiggle.txt', 'w') as f:
+    print(str(result2), file=f)
+
